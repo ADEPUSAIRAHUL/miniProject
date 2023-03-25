@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .maincontiner{
+            width:100%;
+            position:absolute;
+            display:flex;
+            justify-content:space-between;
+           
+        }
+        .frontimgdiv{
+            width:100%;
+            border:2px solid red;
+            background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKOo2fV507PnK9pxA1hSBtZL7SB1aY1uPxCms77afbSKRpWUi-");
+            height:90vh;
+            background-size: 100% 100%;
+            z-index: 0;
+        }
+        
+        .lefthotalname{
+            display: flex;
+            width:100%;
+            height:10vh;
+            justify-content: space-between;
+            background-color: rgba(87, 83, 83, 0.9);
+            z-index: 1;
+        }
+        .lefthotalname img{
+           
+            width:10%;
+            height:5vh;
+            background-size: 100% 100%;
+            margin:10px;padding-right: 20px;
+          
+        }
+        .headericons{
+            width:50%;
+            color:aliceblue;
+            display:flex;
+            justify-content: space-around;
+            align-items:center ;
+            position:relative;
+          
+        }
+        .nav2{
+            width:100%;
+            height:5vh;
+            background-color: rgba(87, 83, 83, 0.8);
+        }
+        .page2{
+            width:100%;
+            height:50vh;
+        
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid yellow;
+            margin:auto;
+            display: flex;
+            justify-content: space-around;
+           
+        }
+        .pg2img{
+            width:35%;
+            height: 40vh;
+            background-image: url("https://media.radissonhotels.net/image/marketing-campaigns-apac/promotional/16256-142220-f75031146_3xl.jpg?impolicy=Card");
+            border-radius: 5px;
+            background-size: 100% 100%;
+            margin-left: 15%;
+            margin-top: 2%;
+            margin-right: 1%;
+
+        }
+        .pg2txt{
+            margin-top: 2%;
+            width:35%;
+            height: 40vh;
+            border-radius: 5px;
+            margin-left: 1%;
+            box-shadow: 0px 0px 3px black;
+            margin-right:15%;font-size:30px;
+        }
+        .pg2txt button{
+            background-color: rgb(249, 6, 6);
+            color: aliceblue;
+            border-radius: 15px;
+            font-size:20px;
+            padding-left:10px;
+            padding-right:10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+    
+    
+        }
+        .page3{
+            width:100%;
+            height:25vh;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(152, 9, 102);
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+        .trendingdistinations{
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        .places>button{
+            color:rgb(84, 82, 82);
+            border-radius: 15px;
+            padding:2px 2px 2px 2px;
+            margin-left: 5px;
+            margin-right: 10px;
+            border-color: rgb(143, 141, 141);           
+            padding: 5px;
+        }
+        .page4{
+            width:80%;
+            height:70vh;
+            position:relative;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(152, 9, 102);
+            display:grid;
+            grid-template-columns:1.5fr 0.5fr;
+            grid-template-rows: 1fr 1fr;
+            gap:10px;
+            left:10%;
+            right:10%;
+            top:5%;
+            
+        }
+        .page4>div{
+            background-color: aqua;
+            text-align: center;
+            background-size: 100% 100%;
+        }
+        .c1{
+            grid-row: 1/3;
+            grid-column: 1/span 1;
+            background-size: 100% 100%;
+            
+        }
+        .t1{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    
+        .c2{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbyXIFOCI492uxvxGBqX99eUe8yak_G5yXYsfDZZPfTLT_yfS);
+            background-size: 100% 100%;
+        }
+        .c3{
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2dIN_4LFRlXoG8aUTsG5oLXF71YqyF9dcaXbnVXOiQg&usqp=CAU&ec=48600113");
+        width:100%;
+        height:100%;
+        }
+        .t2{
+            background-size: 100% 100%;
+            width:100%;
+            height:100%;
+        }
+
+        .special5{
+            width:100%;
+            height:25vh;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+        }
+        .special5 div{
+            width:100%;
+            height: 100%;
+            text-align:center;
+            padding-top:10%;
+            line-height: 10px;
+            text-decoration: underline;
+            
+            font-size:25px;
+        }
+        .twoimg6{
+            width:100%;
+            height:35vh;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+            position:relative;
+            display:flex;
+            justify-content: space-around;
+        }
+        .twoimg61{
+            width:40%;
+            height:100%;
+            margin-left:8%;
+            border:2px solid black;
+            background-image: url(https://media.radissonhotels.net/image/radisson-blu-resort-cam-ranh/barlounge/16256-124035-f72290484_3xl.jpg?impolicy=HighCarrouselThum);
+        }
+        .twoimg62{
+            width:40%;
+            height:100%;
+            margin-right:8%;
+            border:2px solid black;
+            background-image: url(https://media.radissonhotels.net/image/personalisation-images/promotional/16256-145212-f73329389_3xl.jpg?impolicy=HighCarrouselThum);
+        }
+        .efects7{
+            width:100%;
+            height:50vh;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .bestonline{
+            width:20%;
+            height:80%;
+            border:2px solid black;
+            margin-left:12%;
+        }
+        .members{
+            width:20%;
+            height:80%;
+            border:2px solid black;
+            
+        }
+        .wherenext{
+            width:20%;
+            height:80%;
+            border:2px solid black;
+            margin-right:12%;
+
+        }
+        .efects7>div{
+            position:relative;
+            text-align: center;
+            
+        }
+        .text7{
+            position:relative;
+            top:30%;
+            font-size:28px;
+        }
+        .text7>icon{
+            font-size: 120%;
+        }
+
+        .reditionexp8{
+            width:100%;
+            height:20vh;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .name{
+           
+            width:15%;
+            height:50%;
+            border:2px solid black; 
+            font-size: 35px;
+            font-weight: bolder;
+            border-top: none;
+            border-right: none;
+            border-left:none;
+            
+          
+        }
+        .rewards{
+            font-size: 25px;
+            letter-spacing: 10px;
+            font-weight:lighter;
+        }
+        
+        .reditiontxt9{
+            width:100%;
+            height:15vh;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+            display:flex;
+            justify-content: center;
+            align-items:baseline;
+        }
+        .text9{
+            width:50%;
+            font-size: 22px;
+            text-align: center;
+            color:rgb(113, 106, 106);
+        }
+        .centerimg10{
+            width:100%;
+            height:55vh;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+            
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img10{
+            width:70%;
+            height:80%;
+            background-image: url(https://media.radissonhotels.net/image/radisson-rewards--web-app-offers/promotional/16256-127449-f73712081_3xl.jpg?impolicy=LoyaltyCards);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            
+        }
+
+        .cimgtxt11{
+            width:100%;
+            height:25vh;
+            
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .text11{
+            width:50%;
+            height:100%;
+            text-align: center;
+            font-size: 20px;
+            color:rgb(113, 106, 106);
+        }
+        .discounts12{
+            width:100%;
+            height:34vh;
+           
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .offers12{
+            width:30%;
+            height:80%;
+           
+            border:2px solid green;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .offers12>i{
+            width:12%;
+            height:20%;
+            font-size: 255%;
+            border-radius: 50%;
+            background-color: rgb(141, 131, 117);
+        }
+        .cbuttons13{
+            width:100%;
+            height:25vh;
+            background-color: rgb(255, 140, 0);
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+        }
+        .socialmd14{
+            width:100%;
+            height:35vh;
+            background-color: rgb(255, 85, 0);
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+        }
+        .hotdestinations15{
+            width:100%;
+            height:30vh;
+            background-color: rgb(9, 106, 35);
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+        }
+        .creditionicons16{
+            width:100%;
+            height:35vh;
+            background-color: rgb(203, 243, 4);
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+        }.footer17{
+            width:100%;
+            height:55vh;
+            background-color: rgb(76, 84, 78);
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+        }
+        .footertxt18{
+            width:100%;
+            height:25vh;
+            background-color: rgb(9, 106, 35);
+            border-radius: 0px 0px 0px 0px;
+            border:2px solid rgb(9, 28, 152);
+        }
+    </style>
+</head>
+<body>
+    <nav class="maincontainer">
+        <div class="frontimgdiv">   
+            
+                <div class="lefthotalname">
+                    <img src="https://mma.prnasia.com/media2/1294565/RHG_LOGO_RGB_Logo.jpg?p=medium600"alt="hotal name">   
+                    <div class="headericons">
+                        <div>&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-briefcase"></i>&nbsp; MY RESERVATION</div>
+                        <div>&nbsp;&nbsp;<i class="fa-solid fa-earth-oceania"></i>&nbsp; ENGLISH</div>
+                        <div>&nbsp;&nbsp;<i class="fa-sharp fa-solid fa-phone-volume"></i>&nbsp;1800&nbsp;1080&nbsp;333(IN)<i class="fa-solid fa-angle-down"></i></div>
+                        <div>&nbsp;&nbsp;<i class="fa-solid fa-database"></i>&nbsp; INR<i class="fa-solid fa-angle-down"></i></div>    
+                        <div>&nbsp;&nbsp;<button>YOUR ACCOUNT</button></div>
+                    </div>       
+                </div> 
+                <div class="nav2" >
+
+
+                </div>
+                <div class="text-box-in-imag"></div>
+              
+        </div>
+        <div class="page2">
+            <div class="pg2img"></div>
+            <div class="pg2txt"><br/>Eplore your favorite destinations in india as we cslsbrate 25 years of delivering memorable moments.<br/><button>Explore india</button></div>
+
+        </div>
+        <div class="page3">
+            <div class="trendingdistinations">Trending destinations</div>
+            <div class="places">
+                <button>Middie East</button>
+                <button>Europe &CIS</button>
+                <button> Asia Pacific</button>
+                <button>Africa</button>
+                <button>All destinations</button>
+            </div>
+        </div>
+        <div class="page4">
+            <div class="c1"><img class="t1" src="https://st2.depositphotos.com/16173130/50813/i/1600/depositphotos_508138670-stock-photo-lawns-structures-taramati-baradari-golkonda.jpg" alt="">
+            </div>
+            <div class="c2">2</div>
+            <div class="c3"></div>
+        </div>
+        <div class="special5">
+            <div>Special Deals</div>
+        </div>
+        <div class="twoimg6">
+            <div class="twoimg61"></div>
+            <div class="twoimg62"></div>
+        </div>
+        <div class="efects7">
+            <div class="bestonline"><div class="text7"><i class="fa-solid fa-hand-holding-dollar" class="icon"></i>
+                <br/>Best Online rate guarantee</div></div>
+            <div class="members"> <div class="text7"><i class="fa-sharp fa-solid fa-indian-rupee-sign" class="icon"></i><br/>save  more<br/>Members get more</div></div>
+            <div class="wherenext"><div class="text7"><i class="fa-solid fa-city" class="icon"></i><br/>Where next?</div></div>
+        </div>
+        <div class="reditionexp8">
+          <div class="name">REDISSON<P class="rewards">REWARDS</P></div>
+          <div></div>
+        </div>
+        <div class="reditiontxt9">
+            <p class="text9">Join Over 10milion redisson Rewards members for FREE today and<br/>be rewarded for every stay!</p>
+        </div>
+        <div class="centerimg10">
+            <div class="img10"></div>
+        </div>
+        <div class="cimgtxt11">
+            <p class="text11">Enjoy more poins.more partners,and more places with radission Rewards-the international hotel rewards program from Radission Hotel Group.Our program offers exceptional benefits.services.and privileges along With the chance to earn and redeem rewards remarkably fast at over 600 hotels in Europe,the Middle East,Africa and Asia Pacific. </p>
+        </div>
+        <div class="discounts12">
+            <div class="offers12"id="text12"><i class="fa-solid fa-tag" id="icon12"></i><br/><b class="hed">Member Only Rate</b>Members get up to 10% discount</div>
+            <div class="offers12"id="text12"><i class="fa-solid fa-utensils"id="icon12"></i><br/><b class="hed">Discount on Food and Baverages</b>Discount on food and baverages</div>
+            <div class="offers12"id="text12"><i class="fa-solid fa-people-line"id="icon12"></i><br/><b class="hed">Priority Line</b>Save waiting Time with access to Priority Line </div>
+        </div>
+        <div class="cbuttons13">
+        </div>
+        <div class="socialmd14">
+        </div>
+        <div class="hotdestinations15">
+        </div>
+        <div class="creditionicons16">
+        </div>
+        <div class="footer17">
+
+        </div>
+        <div class="footertxt18">
+
+        </div>
+    </nav>
+</body>
+</html>

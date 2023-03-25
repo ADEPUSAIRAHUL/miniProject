@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fun(event)
+        {
+            event.preventDefault()
+            let itr=document.getElementsByTagName("input")
+            let uuid=itr[0].value
+            let upwd=itr[1].value
+            uid=localStorage.getItem("uid")
+            pwd=localStorage.getItem("pwd")
+            if(uuid==uid && upwd==pwd)
+            [
+                window.location="home.html"
+            ]
+            else{
+                window.location="class.html"
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="class.html">register</a>
+        <a href="login.html">login</a>
+    </nav>
+    <form onclick="fun(event)">
+        <input type="text" name="uid"/>
+        <input type="password" name="pwd"/>
+        <input type="submit" value="login"/>
+    </form>
+</body>
+</html>

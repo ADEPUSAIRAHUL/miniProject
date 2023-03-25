@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fun()
+        {
+            h1r=document.getElementsByTagName("h1")[0]
+            h1r.innerHTML=h1r.innerHTML+" "+localStorage("name")
+        }
+        setTimeout (fun,500)
+
+        functionfun1()
+        {
+            localStorage.removeItem("uid")
+            localStorage.removeItem("pwd")
+            localStorage.removeItem("name")
+            window.location="class.html"
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="class.html">register</a>
+        <a href="login.html">login</a>
+    </nav>
+    <h1>home page of</h1>
+    <button onclick="fun1()">Removeuser</button>
+</body>
+</html>

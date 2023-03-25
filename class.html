@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fun(event){
+        event.preventDefault()
+        let itr=document.getElementsByTagName("input")
+        localStorege.setItem("uid",itr[0].value)
+        localStorege.setItem("name",itr[1].value)
+        localStorage.setItem("pwd",itr[2].value)
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="class.html">register</a>
+        <a href="login.html">login</a>
+    </nav>
+    <form onclick="fun(event)">
+    <input type="text" name="uid"/>
+    <input type="text" name="name"/>
+    <input type="password" name="pwd"/>
+    <input type="submit" value="register"/>
+    </form>
+</body>
+</html>
